@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="340b7305-500d-4217-a58b-3e2b80140a93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/.idea/Others.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/docs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Others/templates/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/.idea/Final.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/static/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/templates/Test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestFlask/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test1/BF.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test1/BM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test1/Test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test2/Test2_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test2/Test2_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test3/Test3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test3/Test3_Expand1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test3/Test3_Expand2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test3/demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test4/Test4_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test4/Test4_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test4/Test4_Expand1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test4/Test4_Expand2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test5/Test5_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test5/Test5_Expand1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test5/cn_stopwords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test5/sanguo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test5/text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test6/StopwordsEnglish" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test6/Test6_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test6/Test6_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test6/Test6_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test6/Test6_Expand2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test6/Text6_Expand1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test6/test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/PPT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/PageRank.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/QuickSort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/Test7_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/Test7_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/Text7_Expand1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/Text7_Expand2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/cn_stopwords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/pagerank_three_nodes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/temp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/text1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test7/text2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test8/Test8_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test8/cn_stopwords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test8/temp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Test8/text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Other/Demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Other/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cpp/Algorithm/1/11912030331_吴晨颢_1_Ex1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cpp/Challenge/Elementary/3_1_01Package.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cpp/Challenge/Elementary/3_1_01Package.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cpp/Challenge/Elementary/3_1_01Package_improv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cpp/Challenge/Elementary/3_1_01Package_improv.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cpp/Cpp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cpp/Cpp.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cpp/Demo.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cpp/Demo.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../A&amp;C/NaiveBM/cn_stopwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../A&amp;C/NaiveBM/cn_stopwords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KMP.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test2_1/Output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test2/Output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test2_1/Test2_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test2/Test2_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test2_1/实验2.1 建立词汇索引表_用例.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test2/实验2.1 建立词汇索引表_用例.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test2_2/KMP.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test1/KMP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test2_2/Test2_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test2_2/实验2.2_单文档查找用例.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sanguo/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../sanguo/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sanguo/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../sanguo/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test2/实验2.2_单文档查找用例.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../《搜索引擎原理及应用》实验及课程设计内容.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../InitTest/《搜索引擎原理及应用》实验及课程设计内容.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Flask/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Flask/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../NeuralNetwork/.ipynb_checkpoints/NeuralNetwork-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../NeuralNetwork/NeuralNetwork.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../NeuralNetwork/NeuralNetwork.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Spider/video/BiliBili/BiliBili.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Spider/video/BiliBili/BiliBili.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Spider/video/BiliBili/x.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="212DaLmz7GldPegsVYsqEW1kEIt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Over" type="Python.FlaskServer">
+      <module name="Over" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="340b7305-500d-4217-a58b-3e2b80140a93" name="Default Changelist" comment="" />
+      <created>1637130351170</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637130351170</updated>
+      <workItem from="1637130354546" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

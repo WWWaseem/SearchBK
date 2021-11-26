@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+    />
+    <style>
+        body {
+            background: url("{{ url_for('static', filename='CloudOK.jfif')}}") no-repeat;
+            background-size: 100%;
+        }
+
+        body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+            font-family: "Times New Roman", '华文行楷';
+        }
+
+        /*Microsoft YaHei,*/
+    </style>
+</head>
+<body>
+<form action="getStr" method="post">
+    <section class="p-5  text-light">
+        <div class="container">
+            <div class="input-group news-input ">
+                <input
+                        type="text"
+                        class="form-control"
+                        placeholder="不懂么？不懂就搜！"
+                        name="keyword"
+                        style="font-size:28px;"
+                />
+                <button class="btn  btn-lg btn-primary" style="font-size:28px;">只言片语，可寻万物</button>
+            </div>
+        </div>
+    </section>
+</form>
+</body>
+</html>

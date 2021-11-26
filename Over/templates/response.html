@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+    />
+    <style>
+        /*body {*/
+        /*    background: url(CloudOK.jfif) no-repeat;*/
+        /*    background-size: 100%;*/
+        /*}*/
+        a {
+            text-decoration: none
+        }
+
+        body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+            font-family: 'Times New Roman', '华文行楷';
+        }
+    </style>
+</head>
+<body>
+<form action="getStr" method="post">
+    <section class="p-2  text-light">
+        <div class="container">
+            <div class="input-group news-input ">
+                <input
+                        id='inputKeyword'
+                        type="text"
+                        class="form-control"
+                        placeholder="搜索结果 : {{keyword}}"
+                        name="keyword"
+                        style="font-size:28px;"
+                />
+                <!--            <a href="name">-->
+                <button
+                        class="btn  btn-lg btn-primary"
+                        style="font-size:28px;"
+                >
+                    只言片语，可寻万物
+                </button>
+                <!--            </a>-->
+            </div>
+        </div>
+    </section>
+</form>
+<section class="p-2">
+    <div class="container">
+        <!--        <h1 class="text-center">搜索结果</h1>-->
+        <div
+                class="accordion accordion-flush"
+                id="accordionFlushExample"
+        >
+            {% for i in range(len) %}
+
+            <div class="accordion-item">
+                <h4 class="accordion-header" id="flush-heading{{i}}">
+                    <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse{{i}}"
+                            aria-expanded="false"
+                            aria-controls="flush-collapse{{i}}"
+                    >
+                        <!--                        <a></a>-->
+                        <h4> {{list_res[i].title}}</h4>
+                    </button>
+                </h4>
+                <div
+                        id="flush-collapse{{i}}"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-heading{{i}}"
+                        data-bs-parent="#accordionFlushExample"
+                >
+                    <div class="accordion-body" style="font-size:18px; font-family: 'Times New Roman', '华文楷体'">
+                        <!--                        {{list_res[i].keywords}}-->
+                        <p>
+                            <a href="{{ list_res[i].url }}" target='_blank'>词条 : {{ list_res[i].title }} 更新时间 : {{list_res[i].date}}</a>
+                        </p>
+                        <p>
+                            总体概述 :
+                        </p>
+                        <p style="text-indent:2em;">
+                            {{list_res[i].des}}
+                        </p>
+                        <p>
+                            关键信息 :
+                        </p>
+                        <p style="text-indent:2em;">
+                            {% for key in list_res[i].keywords %}
+                            {{ key }} 
+                            {% endfor %}
+                        </p>
+                        <!--                        {% for key in list_res[i].keywords %}-->
+                        <!--                        <p>-->
+                        <!--&lt;!&ndash;                            <button>&ndash;&gt;-->
+                        <!--                                <a href="{{ key }}" target="_blank" style=" font-family: 'Times New Roman', '华文楷体'">{{ key }}</a>-->
+                        <!--&lt;!&ndash;                            </button>&ndash;&gt;-->
+                        <!--                        </p>-->
+                        <!--                        {% endfor %}-->
+
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<script
+
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+>
+    function getInput() {
+        alert(document.getElementById("inputKeyword").value);
+    }
+</script>
+</body>
+</html>
