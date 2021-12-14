@@ -12,7 +12,6 @@ import urllib
 import requests
 import re
 import os
-import shutil
 import html
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
@@ -30,10 +29,10 @@ def get_info(url):
     list_urlFind : 找到的url
     """
     # global , list_page, count, symbol
-    global count, list_data, list_page, list_url, seed_net
+    global count, list_data, list_page, list_url, seed_net,flag,targetNum
     # 避免重复爬取
 
-    # START 获取编码格式charset
+    # Step 4 : 获取编码格式charset
     try:
         response = requests.get(url=url, headers=header)
         curUrl = response.url
@@ -48,6 +47,7 @@ def get_info(url):
         list_url.pop(0)
         return
 
+    # Step 5 : 获取网页URL, 并判断是否加入URL队列
     bsObj = BeautifulSoup(htmlText, 'lxml')
     # 提取a标签的url
     list_a = bsObj.find_all('a')
@@ -63,12 +63,16 @@ def get_info(url):
             i = urljoin(curUrl, i)
             netloc = urllib.parse.urlparse(i).netloc
             query = urllib.parse.urlparse(i).query
-            if (len(list_url) < 50000 and netloc == seed_net and query != 'force=1') and (i not in list_url and i not in list_page):
-                list_url.append(i)
-                # print(i)
+            if (netloc == seed_net and query != 'force=1') and (i not in list_url and i not in list_page):
+                if len(list_url) < targetNum and flag == 0:
+                    list_url.append(i)
+                else:
+                    flag = 1
+                    list_url_waiting.append(i)
     except:
         return
 
+    # Step 6 : 通过BS4定位所需要的信息并获取
     try:
         title = bsObj.title.string.split('_')[0]
         if title in list_title:
@@ -100,10 +104,12 @@ list_secUrl = []
 list_page = []
 list_title = []
 list_url = []
+list_url_waiting = []
+flag = 0
 seed_net = ''
+targetNum = 10000
 if __name__ == "__main__":
     # Step 0 : 指定文件
-    targetNum = 1
     file = 'BK_' + str(targetNum) + '.json'
     if os.path.exists(file):
         os.remove(file)
@@ -115,10 +121,16 @@ if __name__ == "__main__":
     header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53',
     }
+    # Step 3 : 循环爬取指定条数数据
     while len(list_page) < targetNum and len(list_url) != 0:
+        if len(list_url) == 0:
+            flag = 0
+            list_url = list_url_waiting[:targetNum]
+            list_url_waiting = list_url_waiting[targetNum:]
         url = list_url[0]
         list_url.pop(0)
         get_info(url)
         time.sleep(0.3)
+    # Step 7 : 文件存储
     with open(file, mode='a+', encoding='utf-8') as f:
         json.dump(list_data, f)

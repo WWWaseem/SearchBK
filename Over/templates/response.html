@@ -32,7 +32,7 @@
                         id='inputKeyword'
                         type="text"
                         class="form-control"
-                        placeholder="搜索结果 : {{keyword}}"
+                        placeholder="搜索结果 : {{ keyword }}"
                         name="keyword"
                         style="font-size:28px;"
                 />
@@ -50,63 +50,53 @@
 </form>
 <section class="p-2">
     <div class="container">
-        <!--        <h1 class="text-center">搜索结果</h1>-->
         <div
                 class="accordion accordion-flush"
                 id="accordionFlushExample"
         >
             {% for i in range(len) %}
 
-            <div class="accordion-item">
-                <h4 class="accordion-header" id="flush-heading{{i}}">
-                    <button
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapse{{i}}"
-                            aria-expanded="false"
-                            aria-controls="flush-collapse{{i}}"
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="flush-heading{{ i }}">
+                        <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse{{ i }}"
+                                aria-expanded="false"
+                                aria-controls="flush-collapse{{ i }}"
+                        >
+                            <!--                        <a></a>-->
+                            <h4> {{ list_res[i].title }}</h4>
+                        </button>
+                    </h4>
+                    <div
+                            id="flush-collapse{{ i }}"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-heading{{ i }}"
+                            data-bs-parent="#accordionFlushExample"
                     >
-                        <!--                        <a></a>-->
-                        <h4> {{list_res[i].title}}</h4>
-                    </button>
-                </h4>
-                <div
-                        id="flush-collapse{{i}}"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="flush-heading{{i}}"
-                        data-bs-parent="#accordionFlushExample"
-                >
-                    <div class="accordion-body" style="font-size:18px; font-family: 'Times New Roman', '华文楷体'">
-                        <!--                        {{list_res[i].keywords}}-->
-                        <p>
-                            <a href="{{ list_res[i].url }}" target='_blank'>词条 : {{ list_res[i].title }} 更新时间 : {{list_res[i].date}}</a>
-                        </p>
-                        <p>
-                            总体概述 :
-                        </p>
-                        <p style="text-indent:2em;">
-                            {{list_res[i].des}}
-                        </p>
-                        <p>
-                            关键信息 :
-                        </p>
-                        <p style="text-indent:2em;">
+                        <div class="accordion-body" style="font-size:18px; font-family: 'Times New Roman', '华文楷体'">
+                            <!--                        {{list_res[i].keywords}}-->
+                            <p>
+                                <a href="{{ list_res[i].url }}" target='_blank'>词条 : {{ list_res[i].title }} 更新时间 : {{ list_res[i].date }}</a>
+                            </p>
+                            <p>
+                                <b>总体概述</b> :
+                            </p>
+                            <p style="text-indent:2em;">
+                                {{ list_res[i].des | safe }}
+                            </p>
+                            <p>
+                                <b>关键信息 :</b>
+                            </p>
                             {% for key in list_res[i].keywords %}
-                            {{ key }} 
+                                <p style="text-indent:2em;">{{ key | safe }}</p>
+{#                                                            <p><a href="{{ key | safe }}" target="_self" style=" font-family: 'Times New Roman', '华文楷体'">{{ key }}</a></p>#}
                             {% endfor %}
-                        </p>
-                        <!--                        {% for key in list_res[i].keywords %}-->
-                        <!--                        <p>-->
-                        <!--&lt;!&ndash;                            <button>&ndash;&gt;-->
-                        <!--                                <a href="{{ key }}" target="_blank" style=" font-family: 'Times New Roman', '华文楷体'">{{ key }}</a>-->
-                        <!--&lt;!&ndash;                            </button>&ndash;&gt;-->
-                        <!--                        </p>-->
-                        <!--                        {% endfor %}-->
-
+                        </div>
                     </div>
                 </div>
-            </div>
             {% endfor %}
         </div>
     </div>
